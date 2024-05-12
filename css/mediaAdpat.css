@@ -150,29 +150,35 @@
          transform: translateY(-13px) rotate(-45deg);
          } 
          
-           .firstUl >  li:nth-child(n + 2) {
+           .firstUl > li:nth-of-type(2), .firstUl > li:nth-of-type(3) {
             transform: translateX(23px);
            }
-           .firstUl > li:last-child {
-            transform: translateX(5px);
-           }
-             .firstUl > li:nth-of-type(3), .firstUl > li:nth-of-type(5) {
-                pointer-events: none ;
-            }  
            .firstUl > li:nth-of-type(4) {
-            transform: translate(23px, 130px);
-            transition: all .5s ease;
-            
-        }
-        .firstUl > li:nth-of-type(5) {
-            transform: translate(23px, 120px);
-            transition: all .5s ease;
-            
-        }
-        .firstUl > li:nth-of-type(6) {
-            transform: translate(-5px, 110px);
-            transition: all .5s ease;
+            margin-left: 50px;
+           }
+           .firstUl > li:nth-of-type(5) {
+            margin-left: 50px;
+           }
+           .firstUl > li:nth-of-type(6) {
+            margin-right: 5px;
+           }
+           /* .firstUl > li:last-child {
+            transform: translateX(5px);
+           } */
            
+        .fourth__li__big {
+            transform: translate(0, 150px);
+            transition: all .5s ease;
+            
+        }
+        .fifth__li__big {
+            transform: translate(0, 140px);
+            transition: all .5s ease;
+            
+        }
+        .sixth__li__big {
+            transform: translate(0, 130px);
+            transition: all .5s ease;
         }
         .menu__sub-item:not(:last-child) {
             border: none
@@ -180,24 +186,28 @@
         .menu__sub-item {
             padding: 0;
         }
-        .header {
+        /* .header {
             position: fixed;
-        }
+        } */
          .menu__sub-list {
             top: 35px;
         }
         .visible__sub {
+            pointer-events: all;
             opacity: 1;
             visibility: visible;
+            transition: all .5s ease;
         }
         .triangle {
-            position: relative;
+            position: absolute;
+            top: 300px;
+            left: 65%;
             display: inline-block;
-            width: 0;
-            height: 0;
-            border-top: 5px solid transparent;
-            border-bottom: 5px solid transparent;
-            border-left: 5px solid #fff; 
+            width: 10px;
+            height: 10px;
+            border-top: 8px solid transparent;
+            border-bottom: 8px solid transparent;
+            border-left: 10px solid #fff; 
             margin-left: 5px; 
             transform: rotate(90deg) translateY(-100px); 
         }
