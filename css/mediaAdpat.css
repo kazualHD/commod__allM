@@ -5,7 +5,7 @@
         gap: 20px
     }
     .opening__title {
-        margin-top: 85px
+        margin-top: 85px;
     }
     .opening {
         height: 700px;
@@ -149,7 +149,7 @@
          .button__stick {
          transform: translateY(-13px) rotate(-45deg);
          } 
-         
+           
            .firstUl > li:nth-of-type(2), .firstUl > li:nth-of-type(3) {
             transform: translateX(23px);
            }
@@ -179,6 +179,10 @@
         .sixth__li__big {
             transform: translate(0, 130px);
             transition: all .5s ease;
+        }
+        .sixth__li__about {
+                transform: translate(0, 60px);
+            
         }
         .menu__sub-item:not(:last-child) {
             border: none
@@ -210,6 +214,38 @@
             border-left: 10px solid #fff; 
             margin-left: 5px; 
             transform: rotate(90deg) translateY(-100px); 
+            transition: all .2s ease-in-out;  
+            visibility: hidden;
+      
+        }
+       
+        .triangle2 {
+            position: absolute;
+            top: 415px;
+            left: 65%;
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            border-top: 8px solid transparent;
+            border-bottom: 8px solid transparent;
+            border-left: 10px solid #fff; 
+            margin-left: 5px; 
+            transform: rotate(90deg) translateY(-100px); 
+            transition: all .2s ease-in-out;  
+            visibility: hidden;
+            
+        }
+        .triangle__hidden {
+            visibility: visible;
+        }
+        .triangle2__transformed-big {
+            transform: rotate(90deg) translate(142px, -100px);
+        }
+        .triangle2__clicked-both {
+            transform: translate(0, 190px);;
+        }
+        .firstUl > li {
+            transition: all .2s ease-in-out;
         }
 
  .nav {
