@@ -134,7 +134,7 @@
           margin-top: 20px;
           display: flex;
           flex-direction: column;
-          gap: 40px;
+          gap: 50px;
         }
         
         .checked__burger {
@@ -150,38 +150,29 @@
          transform: translateY(-13px) rotate(-45deg);
          } 
            
-           .firstUl > li:nth-of-type(2), .firstUl > li:nth-of-type(3) {
-            transform: translateX(23px);
+            .firstUl > li:nth-of-type(1) {
+            transform: translateX(-10px);
            }
-           .firstUl > li:nth-of-type(4) {
-            margin-left: 50px;
+           .menu__item:not(:last-child) {
+            margin: 0 auto;
            }
-           .firstUl > li:nth-of-type(5) {
-            margin-left: 50px;
-           }
-           .firstUl > li:nth-of-type(6) {
-            margin-right: 5px;
-           }
-           /* .firstUl > li:last-child {
-            transform: translateX(5px);
-           } */
-           
+          
         .fourth__li__big {
-            transform: translate(0, 150px);
+            transform: translate(0, 200px);
             transition: all .5s ease;
             
         }
         .fifth__li__big {
-            transform: translate(0, 140px);
+            transform: translate(0, 190px);
             transition: all .5s ease;
             
         }
         .sixth__li__big {
-            transform: translate(0, 130px);
+            transform: translate(0, 185px);
             transition: all .5s ease;
         }
         .sixth__li__about {
-                transform: translate(0, 60px);
+                transform: translate(0, 40px);
             
         }
         .menu__sub-item:not(:last-child) {
@@ -194,26 +185,45 @@
             position: fixed;
         } */
          .menu__sub-list {
-            top: 35px;
+            border: none;
+            background: linear-gradient(to bottom, #000000, #000000);
+         
         }
         .visible__sub {
-            pointer-events: all;
-            opacity: 1;
-            visibility: visible;
-            transition: all .5s ease;
+                display: flex;
+                flex-direction: column;
+                top:0;
+                gap: 15px;
+                pointer-events: all;
+                opacity: 1;
+                visibility: visible;
+                background: none;
+                border: none;
+                margin: 0 auto;
+                transition: all .5s ease;
+               
+        }
+        .menu__item:hover .menu__sub-list {
+            margin: 0 auto;
+            top: 20px;
+        }
+       
+        .menu__sub-link {
+            color: #fff;
+            font-weight: bolder;
         }
         .triangle {
             position: absolute;
-            top: 300px;
-            left: 65%;
+            top: 323px;
+            left: 40%;
             display: inline-block;
             width: 10px;
             height: 10px;
-            border-top: 8px solid transparent;
-            border-bottom: 8px solid transparent;
-            border-left: 10px solid #fff; 
+            border-top: 5px solid transparent;
+            border-bottom: 5px solid transparent;
+            border-left: 8px solid #fff; 
             margin-left: 5px; 
-            transform: rotate(90deg) translateY(-100px); 
+            transform: rotate(90deg) translateY(-110px); 
             transition: all .2s ease-in-out;  
             visibility: hidden;
       
@@ -221,16 +231,16 @@
        
         .triangle2 {
             position: absolute;
-            top: 415px;
-            left: 65%;
+            top: 460px;
+            left: 40%;
             display: inline-block;
             width: 10px;
             height: 10px;
-            border-top: 8px solid transparent;
-            border-bottom: 8px solid transparent;
-            border-left: 10px solid #fff; 
+            border-top: 5px solid transparent;
+            border-bottom: 5px solid transparent;
+            border-left: 8px solid #fff; 
             margin-left: 5px; 
-            transform: rotate(90deg) translateY(-100px); 
+            transform: rotate(90deg) translateY(-110px); 
             transition: all .2s ease-in-out;  
             visibility: hidden;
             
@@ -239,13 +249,25 @@
             visibility: visible;
         }
         .triangle2__transformed-big {
-            transform: rotate(90deg) translate(142px, -100px);
+            transform: rotate(90deg) translate(190px, -110px);
         }
         .triangle2__clicked-both {
-            transform: translate(0, 190px);;
+            transform: translate(0, 230px);;
         }
         .firstUl > li {
             transition: all .2s ease-in-out;
+        }
+        .menu__sub-list::before {
+            display: none;
+        }
+        .menu__link {
+            font-size: 18px;
+        }
+        .menu__sub-item {
+            margin: 0 auto;
+        }
+        .firstUl > li:nth-of-type(5) .menu__sub-list {
+            top: 20px;
         }
 
  .nav {
